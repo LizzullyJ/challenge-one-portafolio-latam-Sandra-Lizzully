@@ -332,17 +332,18 @@ section.formcontato {
 
 .form__group {
     position: relative;
-    padding: 15px 10px 0;
+    padding: 15px 0 0;
     margin-top: 25px;
     width: 100%;
     background: white;
+    border-radius: 5px;
 }
 
 .formcontato__input,
 .formcontato__textarea {
     width: 100%;
     border: 0;
-    border-bottom: 2px solid rgb(154, 154, 154);
+    border-bottom: 2px solid rgb(180, 178, 178);
     outline: 0;
     font-size: 1.3rem;
     color: var(--color-font);
