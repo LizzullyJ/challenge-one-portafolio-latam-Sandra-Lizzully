@@ -7,20 +7,21 @@ coloque nas sessões indicadas*/
 :root {
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-    --cor-de-fundo: #F5F5F5;
-    --cor-de-link: #000;
-    --color-about: #EAF2FD;
-    --font-color: #464646;
+    --color-de-fondo: #F5F5F5;
+    --color-de-link: #000;
+    --color-azul: #EAF2FD;
+    --color-font: #464646;
+    --color-boton-demo: #2A7AE4;
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo);
+    background-color: var(--color-de-fondo);
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
-    color: var(--font-color) ;
+    color: var(--color-font);
 }
 
 ol,
@@ -31,20 +32,9 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--color-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
-
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
@@ -116,7 +106,7 @@ section.title {
 /*Sección About*/
 
 section.about {
-    background: var(--color-about);
+    background: var(--color-azul);
     padding: 3rem 25rem 3rem 5rem;
 }
 
@@ -140,8 +130,8 @@ section.skills {
 
 .skills__line {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px 30px;
     padding-top: 2rem;
 }
 
@@ -149,10 +139,11 @@ section.skills {
     background: #ffffff;
     text-align: center;
     padding: 50px 20px;
+    border-radius: 2rem;
 }
 
 .skills__imagen {
-    height: 50px;
+    height: 80px;
 }
 
 .skills__name {
@@ -165,29 +156,29 @@ section.hobbies {
     padding: 2rem 5rem 2rem 5rem;
 }
 
-.hobbies__title{
+.hobbies__title {
     text-align: center;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
-.hobbies__line{
+.hobbies__line {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     padding-top: 2rem;
 }
 
-.hobbies__box{
+.hobbies__box {
     background: #ffffff;
     text-align: center;
     padding: 50px 20px;
 }
 
-.hobbies__imagen{
+.hobbies__imagen {
     height: 50px;
-} 
+}
 
-.hobbies__name{
+.hobbies__name {
     font-weight: bold;
 }
 
@@ -196,51 +187,239 @@ section.hobbies {
 
 section.academic {
     padding: 3rem 5rem;
-    background: var(--color-about);
+    background: var(--color-azul);
 
 }
 
-.academic__title{
+.academic__title {
     text-align: center;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
 
-.academic__courses{
+.academic__courses {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));   
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 60px;
     padding-top: 2rem;
-    
+
 }
 
 
 
-.academic__courses__item__img{
+.academic__courses__item__img {
     background: #ffffff;
     text-align: center;
-    padding: 50px 40px; 
+    padding: 50px 40px;
 }
-.academic__courses__item__title{
+
+.academic__courses__item__title {
     padding-top: 1rem;
     font-weight: bolder;
 }
 
-.academic__courses__item__subtitle{
-   
+.academic__courses__item__subtitle {
+
     font-size: .8rem;
 }
 
 /* experiencia*/
 
-section.experience {}
+section.experience {
+    padding: 3rem 5rem;
+}
+
+.experience__section__title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.experience__box {
+    display: flex;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+
+.experience__box--reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+
+.experience__info {
+    padding: 1.5rem;
+}
+
+.experience__title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.experience__text {
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.experience__description {
+    padding-top: 1rem;
+}
+
+.experience__boton--repo {
+    background: var(--color-de-fondo);
+    border-color: var(--color-boton-demo);
+    border-width: 1px;
+    color: var(--color-boton-demo);
+    padding: 1rem;
+
+}
+
+.experience__demo {
+    padding-left: 1rem;
+}
+
+.experience__boton--demo {
+    background: var(--color-boton-demo);
+    border-color: var(--color-de-fondo);
+    border-width: 1px;
+    color: var(--color-de-fondo);
+    padding: 1rem;
+
+}
 
 /*Contacto*/
 
-section.formcontato {}
+section.formcontato {
+    background: var(--color-azul);
+    padding: 3rem 5rem;
+}
+
+.formcontato__contacto {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.formcontato--izquierda {
+    padding-right: 2rem;
+}
+
+.formcontato__text {
+    padding-bottom: 1.5rem;
+    width: 100%;
+}
+
+.formcontato__title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.formcontato__subtext {
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-bottom: .5rem;
+
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.form__group {
+    position: relative;
+    padding: 15px 10px 0;
+    margin-top: 25px;
+    width: 100%;
+    background: white;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(154, 154, 154);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--color-font);
+    padding: 7px 0;
+    transition: border-color 0.2s;
+    background: transparent;
+
+
+}
+
+.formcontato__input::placeholder,
+.formcontato__textarea::placeholder {
+    color: transparent;
+}
+
+.formcontato__input:placeholder-shown~.form__label,
+.formcontato__textarea:placeholder-shown~.form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--color-font);
+    
+}
+
+.formcontato__input:focus,
+.formcontato__textarea:focus {
+    ~.form__label {
+        position: absolute;
+        top: 5px;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: var(--color-boton-demo);
+        font-weight: 700;
+    }
+
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--color-boton-demo), #F5F5F5);
+    border-image-slice: 1;
+}
+
+/* reset input */
+/* .formcontato__input {
+    &:required,
+    &:invalid {
+        box-shadow: none;
+    }
+} */
+
+.formcontato__boton {
+    background: var(--color-boton-demo);
+    border-color: var(--color-de-fondo);
+    border-width: 1px;
+    color: var(--color-de-fondo);
+    padding: 1rem;
+    width: fit-content;
+    margin-top: 25px;
+
+}
 
 /*footeer*/
 
-section.footer {}
+section.footer {
+    padding: 3rem 5rem;
+    text-align: center;
+}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
