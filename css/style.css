@@ -5,18 +5,28 @@ en las secciones señaladas */
 coloque nas sessões indicadas*/
 
 :root {
-    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-    --color-de-fondo: #F5F5F5;
+
+    /* --color-de-fondo: #F5F5F5;
     --color-de-link: #000;
-    --color-azul: #EAF2FD;
+    --color-seccion: #EAF2FD;
     --color-font: #464646;
     --color-boton-demo: #2A7AE4;
+    --color-blanco : #FFFFFF */
+
+    /* mis colores */
+    --color-de-fondo: #f7e9ff;
+    --color-de-fondo2: #d3c5fd;
+    --color-de-link: #000;
+    --color-seccion: #d3c5fd;
+    --color-font: #4c3b57;
+    --color-boton-demo: #856399;
+    --color-blanco : #ffffff
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--color-de-fondo);
+    background: linear-gradient(0.25turn, var(--color-de-fondo), 50%, var(--color-de-fondo2));
+    /* background-color: var(--color-de-fondo); */
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
@@ -106,7 +116,7 @@ section.title {
 /*Sección About*/
 
 section.about {
-    background: var(--color-azul);
+    background: var(--color-seccion);
     padding: 3rem 25rem 3rem 5rem;
 }
 
@@ -136,7 +146,7 @@ section.skills {
 }
 
 .skills__box {
-    background: #ffffff;
+    background: var(--color-blanco);
     text-align: center;
     padding: 50px 20px;
     border-radius: 2rem;
@@ -169,7 +179,7 @@ section.hobbies {
 }
 
 .hobbies__box {
-    background: #ffffff;
+    background: var(--color-blanco);
     text-align: center;
     padding: 50px 20px;
 }
@@ -187,7 +197,7 @@ section.hobbies {
 
 section.academic {
     padding: 3rem 5rem;
-    background: var(--color-azul);
+    background: var(--color-seccion);
 
 }
 
@@ -204,10 +214,8 @@ section.academic {
 
 }
 
-
-
 .academic__courses__item__img {
-    background: #ffffff;
+    background: var(--color-blanco);
     text-align: center;
     padding: 50px 40px;
 }
@@ -291,7 +299,7 @@ section.experience {
 /*Contacto*/
 
 section.formcontato {
-    background: var(--color-azul);
+    background: var(--color-seccion);
     padding: 3rem 5rem;
 }
 
@@ -335,7 +343,7 @@ section.formcontato {
     padding: 15px 0 0;
     margin-top: 25px;
     width: 100%;
-    background: white;
+    background: var(--color-blanco);
     border-radius: 5px;
 }
 
@@ -392,7 +400,7 @@ section.formcontato {
     padding-bottom: 6px;
     font-weight: 700;
     border-width: 3px;
-    border-image: linear-gradient(to right, var(--color-boton-demo), #F5F5F5);
+    border-image: linear-gradient(to right, var(--color-boton-demo), var(--color-de-fondo));
     border-image-slice: 1;
 }
 
