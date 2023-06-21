@@ -1,0 +1,53 @@
+
+
+/* Experiencia Académica*/
+
+section.academic {
+    padding: 3rem 5rem;
+    background: var(--color-seccion);
+
+}
+
+.academic__title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.academic__courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 60px;
+    padding-top: 2rem;
+
+}
+
+.academic__courses__item__img {
+    background: var(--color-blanco);
+    text-align: center;
+    padding: 50px 40px;
+}
+
+.academic__courses__item__title {
+    padding-top: 1rem;
+    font-weight: bolder;
+}
+
+.academic__courses__item__subtitle {
+
+    font-size: .8rem;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+ 
+
+}

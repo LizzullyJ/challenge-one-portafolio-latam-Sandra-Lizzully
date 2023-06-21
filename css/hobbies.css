@@ -1,0 +1,48 @@
+
+
+/*Sección Hobbies*/
+
+section.hobbies {
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.hobbies__title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hobbies__line {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding-top: 2rem;
+}
+
+.hobbies__box {
+    background: var(--color-blanco);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hobbies__imagen {
+    height: 50px;
+}
+
+.hobbies__name {
+    font-weight: bold;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+
+
+}

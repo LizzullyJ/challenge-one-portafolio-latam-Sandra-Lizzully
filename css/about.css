@@ -1,0 +1,30 @@
+
+/*Sección About*/
+
+section.about {
+    background: var(--color-seccion);
+    padding: 3rem 25rem 3rem 5rem;
+}
+
+.about__title {
+    font-size: 1.5rem;
+}
+
+.about__paragraph {
+    text-align: justify;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+
+
+}

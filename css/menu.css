@@ -1,0 +1,42 @@
+/*Sección Menu*/
+
+section.menu {
+    padding-top: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__title {
+    padding-left: .5rem;
+}
+
+.menu__header {
+    align-items: center;
+    display: flex;
+    padding-left: 5rem;
+}
+
+.menu__list {
+    display: flex;
+    padding-right: 5rem;
+}
+
+.menu__list__item {
+    padding-left: 1rem;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+
+
+}

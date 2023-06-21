@@ -1,0 +1,78 @@
+/* experiencia*/
+
+section.experience {
+    padding: 3rem 5rem;
+}
+
+.experience__section__title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.experience__box {
+    display: flex;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+
+.experience__box--reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+
+.experience__info {
+    padding: 1.5rem;
+}
+
+.experience__title {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.experience__text {
+    font-weight: lighter;
+    padding-bottom: 1rem;
+}
+
+.experience__description {
+    padding-top: 1rem;
+}
+
+.experience__boton--repo {
+    background: var(--color-de-fondo);
+    border-color: var(--color-boton-demo);
+    border-width: 1px;
+    color: var(--color-boton-demo);
+    padding: 1rem;
+
+}
+
+.experience__demo {
+    padding-left: 1rem;
+}
+
+.experience__boton--demo {
+    background: var(--color-boton-demo);
+    border-color: var(--color-de-fondo);
+    border-width: 1px;
+    color: var(--color-de-fondo);
+    padding: 1rem;
+
+}
+/*Tablet*/
+@media (min-width: 768px) {
+
+
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+ 
+
+}
