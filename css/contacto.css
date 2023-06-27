@@ -10,8 +10,10 @@ section.formcontato {
 .formcontato__contacto {
     display: flex;
     align-items: center;
+ 
     /* justify-content: space-between; */
 }
+
 
 .formcontato--izquierda {
     padding-right: 2rem;
@@ -109,12 +111,12 @@ section.formcontato {
 }
 
 /* reset input */
-/* .formcontato__input {
+.formcontato__input {
     &:required,
     &:invalid {
         box-shadow: none;
     }
-} */
+}
 
 .formcontato__boton {
     background: var(--color-boton-demo);
