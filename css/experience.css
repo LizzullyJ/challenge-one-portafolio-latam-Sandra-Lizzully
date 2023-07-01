@@ -14,6 +14,7 @@ section.experience {
     display: flex;
     padding-bottom: 3rem;
     align-items: center;
+   
 }
 
 .experience__box--reverse {

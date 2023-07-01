@@ -25,6 +25,7 @@ section.academic {
     background: var(--color-blanco);
     text-align: center;
     padding: 50px 40px;
+    border-radius: 2rem;
 }
 
 .academic__courses__item__title {
