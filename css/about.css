@@ -16,15 +16,19 @@ section.about {
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    section.about {     
+        padding: 2rem;
+    }
 
+
+}
+
+@media (max-width: 425px) {
+    section.about {     
+        padding: .75rem;
+    }
 
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
-
-
-
-}

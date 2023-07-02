@@ -1,4 +1,3 @@
-
 /*Sección Skills*/
 section.skills {
     padding: 2rem 5rem 2rem 5rem;
@@ -12,14 +11,14 @@ section.skills {
 .skills__line {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 15px 30px;
+    gap: 15px;
     padding-top: 2rem;
 }
 
 .skills__box {
     background: var(--color-blanco);
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
     border-radius: 2rem;
 }
 
@@ -33,15 +32,19 @@ section.skills {
 
 
 /*Tablet*/
-@media (min-width: 768px) {
-
-
+@media (max-width: 768px) {
+    section.skills {
+        padding: 2rem;
+    }
+    .skills__line {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
-
-
-
+@media (max-width: 425px) {
+    section.skills {
+        padding: .75rem;
+    }
 }

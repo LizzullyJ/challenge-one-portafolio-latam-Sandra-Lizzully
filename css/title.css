@@ -14,7 +14,7 @@ section.title {
 }
 
 .title__profile {
-    width: 300px;
+    width: 20rem;
 }
 
 .title__bio {
@@ -39,14 +39,50 @@ section.title {
 
 
 /*Tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+    section.title {     
+        padding: 2rem;
+    }
  
+    .title__profile {
+        width: 10rem;
+    }
 
+    .title__bio {
+        font-size: .85rem;
+    }
+
+    .title__subsection {
+        padding-top: 1rem;
+        font-size: .6rem;
+       
+    }
+    .title__network__item {
+        padding-right: 1rem;
+        font-size: .6rem;
+    }
+    .img__arrow{
+        width: .5rem;
+    }
 
 }
 
 /*Mobile*/
 /* 0 */
 @media screen and (max-width: 425px) {
-
+    section.title {     
+        padding: .75rem;
+    }
+    .title__container{
+        padding-top: 1rem;  
+    }
+    .title__profile {
+        width: 6rem;
+    }
+  
+    .title__div {
+        padding-top: .5rem;
+        align-items: start;
+        flex-direction: column;
+    }
 }

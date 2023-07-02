@@ -131,15 +131,31 @@ section.formcontato {
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    section.formcontato {
+       
+        padding: 2rem;
+    }
+    .formcontato--izquierda {
+        padding-right: 0rem;
+    }
 
-
+    .formcontato__img {
+        display: none;
+      }
+      
+      .formcontato__text {
+        width: 100%;
+      }
 
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
 
-
+    section.formcontato {
+        background: var(--color-seccion);
+        padding: .75rem;
+    }
 
 }

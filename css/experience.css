@@ -65,15 +65,33 @@ section.experience {
 
 }
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
-
+    section.experience {
+        padding: 2rem;
+    }
+    .experience__box, .experience__box--reverse  {
+        
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+       
+    }
+    .experience__img {
+        max-width: 100%;
+        height: auto;
+      }
 
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media (max-width: 425px) {
 
- 
+    section.experience {
+        padding:.75rem;
+    }
+  
 
 }
