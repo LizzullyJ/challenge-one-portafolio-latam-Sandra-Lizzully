@@ -371,25 +371,25 @@
                         usted lo antes posible. </h3>
                     <form class="formcontato__form" name="form" onsubmit="return validarFormulario()">
                         <div class="form__group field">
-                            <input class="formcontato__input" id="name" type="text" name="nombre" placeholder="Nombre">
+                            <input class="formcontato__input" id="name" type="text" name="nombre" placeholder="Nombre" required>
                             <label class="form__label" for="name">Nombre</label>
                         </div>
 
                         <div class="form__group field">
-                            <input class="formcontato__input" id="email" type="email" name="email" placeholder="E-mail">
+                            <input class="formcontato__input" id="email" type="email" name="email" placeholder="E-mail" required>
                             <label class="form__label" for="email">E-mail</label>
 
                         </div>
 
                         <div class="form__group field">
                             <input class="formcontato__input" id="asunto" type="text" name="asunto"
-                                placeholder="Asunto">
+                                placeholder="Asunto" required>
                             <label class="form__label" for="asunto">Asunto</label>
                         </div>
 
                         <div class="form__group field">
                             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
-                                placeholder="Mensaje"></textarea>
+                                placeholder="Mensaje" required></textarea>
                             <label class="form__label" for="mensagem">Mensaje</label>
                         </div>
 
@@ -409,7 +409,7 @@
         </section>
     </div>
     <!-- Script del documento JavaScript -->
-    <script src="validacion.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

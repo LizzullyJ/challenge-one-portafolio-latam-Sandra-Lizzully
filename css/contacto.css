@@ -53,6 +53,12 @@ section.formcontato {
     border-radius: 5px;
 }
 
+.form__group--invalid .formcontato__input{
+    border-style: solid;
+    border-color: crimson;
+
+}
+
 .formcontato__input,
 .formcontato__textarea {
     width: 100%;
