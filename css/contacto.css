@@ -145,6 +145,10 @@ section.formcontato {
     margin-top: 25px;
 
 }
+.formcontato__boton:hover{
+    animation: shake 0.25s;
+    cursor: pointer;
+}
 
 
 /*Tablet*/

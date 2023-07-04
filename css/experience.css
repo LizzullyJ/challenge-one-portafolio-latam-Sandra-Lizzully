@@ -51,6 +51,11 @@ section.experience {
 
 }
 
+.experience__boton--repo:hover{
+    animation: shake 0.25s;
+    cursor: pointer;
+}
+
 .experience__demo {
     padding-left: 1rem;
 }
@@ -62,6 +67,10 @@ section.experience {
     color: var(--color-de-fondo);
     padding: 1rem;
 
+}
+.experience__boton--demo:hover{
+    animation: shake 0.25s;
+    cursor: pointer;
 }
 
 /*Tablet*/
