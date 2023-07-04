@@ -20,7 +20,8 @@ coloque nas sessões indicadas*/
     --color-seccion: #d3c5fd;
     --color-font: #4c3b57;
     --color-boton-demo: #856399;
-    --color-blanco : #ffffff
+    --color-blanco : #ffffff;
+    --warning-color: #9f0331;
 }
 
 body {
