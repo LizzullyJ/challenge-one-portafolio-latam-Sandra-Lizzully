@@ -369,15 +369,17 @@
                     <h3 class="formcontato__subtext">Complete el siguiente
                         formulario y me pondré en contacto con
                         usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form" onsubmit="return validarFormulario()">
+                    <form class="formcontato__form" name="form" action="https://formsubmit.co/lizzullytha@gmail.com" method="POST">
                         <div class="form__group field">
                             <input class="formcontato__input" id="name" type="text" name="nombre" placeholder="Nombre" required>
                             <label class="form__label" for="name">Nombre</label>
+                            <span class="input-message-error">Este campo no es valido</span>
                         </div>
 
                         <div class="form__group field">
                             <input class="formcontato__input" id="email" type="email" name="email" placeholder="E-mail" required>
                             <label class="form__label" for="email">E-mail</label>
+                            <span class="input-message-error">Este campo no es valido</span>
 
                         </div>
 
@@ -385,12 +387,14 @@
                             <input class="formcontato__input" id="asunto" type="text" name="asunto"
                                 placeholder="Asunto" required>
                             <label class="form__label" for="asunto">Asunto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
                         </div>
 
                         <div class="form__group field">
                             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
                                 placeholder="Mensaje" required></textarea>
                             <label class="form__label" for="mensagem">Mensaje</label>
+                            <span class="input-message-error">Este campo no es valido</span>
                         </div>
 
                         <button type="submit" class="formcontato__boton">Enviar
