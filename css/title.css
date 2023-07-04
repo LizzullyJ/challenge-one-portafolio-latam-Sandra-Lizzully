@@ -30,14 +30,62 @@ section.title {
 .title__network {
     display: flex;
 
+
 }
 
 .title__network__item {
-    padding-right: 3rem;
-    font-size: .8rem;
+    padding-right: 1rem;
+ 
+}
+/* animacion */
+.redes {
+    display: inline-flex;
+    flex-direction: row;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    outline: 2px solid var(--color-font);
+    margin: 5px;
+    padding: 2px;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: 0.30s;
+    cursor: pointer;
 }
 
+.icons {
+    margin: auto;
+    display: block;
+    height: 30px;
+}
 
+.icons:hover {
+    animation: shake 0.25s;
+
+}
+
+#github:hover, #linkedin:hover, #twitter:hover, #instagram:hover, #curriculom:hover {
+    outline-offset: 4px;
+    outline-color: var(--color-font);
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+/* ---------- */
 /*Tablet*/
 @media screen and (max-width: 768px) {
     section.title {     
@@ -58,11 +106,19 @@ section.title {
        
     }
     .title__network__item {
-        padding-right: 1rem;
-        font-size: .6rem;
+        padding-right: .5rem;
+       
     }
     .img__arrow{
         width: .5rem;
+    }
+
+    .redes{
+        width:20px;
+    height: 20px;
+    }
+    .icons{
+        height: 15px;
     }
 
 }
