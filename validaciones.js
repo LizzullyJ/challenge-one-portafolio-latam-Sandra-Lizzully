@@ -2,7 +2,6 @@ const inputs = document.querySelectorAll('.formcontato__input, .formcontato__tex
 
 inputs.forEach(input => {
     input.addEventListener("blur", (event) => {
-       console.log(event.target);
         valida(event.target);
     });
 });
@@ -10,7 +9,6 @@ inputs.forEach(input => {
 
 function valida(input) {
     const tipoInput = input.dataset.tipo;
- 
 
     if (input.validity.valid) {
         input.parentElement.classList.remove("form__group--invalid");
