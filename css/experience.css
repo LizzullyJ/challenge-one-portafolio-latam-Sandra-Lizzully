@@ -54,6 +54,9 @@ section.experience {
 .experience__boton--repo:hover{
     animation: shake 0.25s;
     cursor: pointer;
+    background: var(--color-boton-demo);
+    border-color: var(--color-de-fondo);
+    color: var(--color-de-fondo);
 }
 
 .experience__demo {
@@ -71,6 +74,9 @@ section.experience {
 .experience__boton--demo:hover{
     animation: shake 0.25s;
     cursor: pointer;
+    background: var(--color-de-fondo);
+    border-color: var(--color-boton-demo);
+    color: var(--color-boton-demo);
 }
 
 /*Tablet*/

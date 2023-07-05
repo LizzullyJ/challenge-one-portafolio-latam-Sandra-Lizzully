@@ -148,6 +148,9 @@ section.formcontato {
 .formcontato__boton:hover{
     animation: shake 0.25s;
     cursor: pointer;
+    background: var(--color-de-fondo);
+    border-color: var(--color-boton-demo);
+    color: var(--color-boton-demo);
 }
 
 

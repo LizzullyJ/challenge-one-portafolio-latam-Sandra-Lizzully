@@ -29,8 +29,6 @@ section.title {
 
 .title__network {
     display: flex;
-
-
 }
 
 .title__network__item {
@@ -41,8 +39,8 @@ section.title {
 .redes {
     display: inline-flex;
     flex-direction: row;
-    width: 35px;
-    height: 35px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     outline: 2px solid var(--color-font);
     margin: 5px;
@@ -55,7 +53,7 @@ section.title {
 .icons {
     margin: auto;
     display: block;
-    height: 30px;
+    height: 2rem;
 }
 
 .icons:hover {
@@ -63,29 +61,13 @@ section.title {
 
 }
 
-#github:hover, #linkedin:hover, #twitter:hover, #instagram:hover, #curriculom:hover {
+#github:hover, #linkedin:hover, #twitter:hover, #instagram:hover, #curriculum:hover {
     outline-offset: 4px;
     outline-color: var(--color-font);
 }
 
-@keyframes shake {
-    10% {
-        transform: rotate(15deg);
-    }
-
-    20% {
-        transform: rotate(-15deg);
-    }
-
-    30% {
-        transform: rotate(15deg);
-    }
-
-    40% {
-        transform: rotate(-15deg);
-    }
-}
 /* ---------- */
+
 /*Tablet*/
 @media screen and (max-width: 768px) {
     section.title {     
