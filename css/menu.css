@@ -33,7 +33,13 @@ section.menu {
     padding-left: 1rem;
 }
 
+.menu__list__item:hover {
+    animation: shake 0.25s;
+}
 
+a:hover{
+    color: var(--color-boton-demo);
+}
 /*Tablet*/
 @media (max-width: 768px) {
 

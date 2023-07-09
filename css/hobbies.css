@@ -44,16 +44,14 @@ section.hobbies {
     
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     
-    }
+    }}
 
-}
+
 
 /*Mobile*/
 @media (max-width: 425px) {
     section.hobbies {
         padding: .75rem;
     }
-
-
-
 }
+

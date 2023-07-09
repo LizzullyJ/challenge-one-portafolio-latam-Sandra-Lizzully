@@ -10,10 +10,8 @@ section.formcontato {
 .formcontato__contacto {
     display: flex;
     align-items: center;
- 
-    /* justify-content: space-between; */
-}
 
+}
 
 .formcontato--izquierda {
     padding-right: 2rem;
@@ -34,7 +32,6 @@ section.formcontato {
     font-size: 1rem;
     font-weight: lighter;
     padding-bottom: .5rem;
-
 }
 
 .formcontato__form {
@@ -53,14 +50,7 @@ section.formcontato {
     border-radius: 5px;
 }
 
-.form__group--invalid .formcontato__input{
-    border-style: solid;
-    border-color: crimson;
-
-}
-
-.formcontato__input,
-.formcontato__textarea {
+.formcontato__input{
     width: 100%;
     border: 0;
     border-bottom: 2px solid rgb(180, 178, 178);
@@ -74,13 +64,12 @@ section.formcontato {
 
 }
 
-.formcontato__input::placeholder,
-.formcontato__textarea::placeholder {
+.formcontato__input::placeholder{
     color: transparent;
 }
 
-.formcontato__input:placeholder-shown~.form__label,
-.formcontato__textarea:placeholder-shown~.form__label {
+.formcontato__input:placeholder-shown~.form__label
+ {
     font-size: 1.3rem;
     cursor: text;
     top: 20px;
@@ -94,11 +83,11 @@ section.formcontato {
     transition: 0.2s;
     font-size: 1rem;
     color: var(--color-font);
+  
     
 }
 
-.formcontato__input:focus,
-.formcontato__textarea:focus {
+.formcontato__input:focus{
     ~.form__label {
         position: absolute;
         top: 5px;
@@ -116,13 +105,35 @@ section.formcontato {
     border-image-slice: 1;
 }
 
-/* reset input */
-.formcontato__input {
-    &:required,
-    &:invalid {
-        box-shadow: none;
+
+/* Invalid */
+.form__group--invalid {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form__group--invalid .formcontato__input {
+    ~.form__label {   
+        color: var(--warning-color);       
     }
-}
+    border: 0;
+    border-bottom: 2px solid var(--warning-color);
+  }
+  
+  .form__group--invalid .form-label {
+    color: var(--warning-color);
+  }
+  
+  .input-message-error {
+    display: none;
+  }
+  
+  .form__group--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  /* ----------------- */
 
 .formcontato__boton {
     background: var(--color-boton-demo);
@@ -133,6 +144,13 @@ section.formcontato {
     width: fit-content;
     margin-top: 25px;
 
+}
+.formcontato__boton:hover{
+    animation: shake 0.25s;
+    cursor: pointer;
+    background: var(--color-de-fondo);
+    border-color: var(--color-boton-demo);
+    color: var(--color-boton-demo);
 }
 
 
