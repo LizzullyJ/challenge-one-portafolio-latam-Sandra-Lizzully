@@ -15,6 +15,7 @@ section.title {
 
 .title__profile {
     width: 20rem;
+    border-radius: 100%;
 }
 
 .title__bio {
